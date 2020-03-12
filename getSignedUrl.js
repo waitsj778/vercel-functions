@@ -6,8 +6,8 @@ var AWS = require('aws-sdk');
     })
 var s3 = new AWS.S3();
 var params = {
-        Bucket: '<<Bucker name>>',
-        Key: '<<files's url>>',
+        Bucket: '<<Bucket name>>',
+        Key: '<<Url for accessing object>>',
         Expires: <<60>> // 60 sec
 };
 module.exports = async (req, res) => {

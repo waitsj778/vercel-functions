@@ -8,7 +8,7 @@ var s3 = new AWS.S3();
 var params = {
         Bucket: '<<Bucket name>>',
         Key: '<<Url for accessing object>>',
-        Expires: <<60>> // 60 sec
+        Expires: 60 // 60 sec
 };
 module.exports = async (req, res) => {
         const imagesrc = await s3.getSignedUrlPromise('getObject', params);

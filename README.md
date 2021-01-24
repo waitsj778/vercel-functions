@@ -1,1 +1,2 @@
-# library of now-functions
+# 概要
+S3 Presigned URLを発行し、ファイルを参照させるAPI
